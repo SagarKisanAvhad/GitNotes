@@ -49,6 +49,12 @@
 - `git rebase -i development`
 - `git push --force-with-lease`
 
+### reset
+- `git reset --hard origin/main`     **Useful in the fork repo after we sync the fork repo's origin/main from original upstream**
+- `git reset --hard <oldCommitid>`   **This reset the head and main to the oldCommitid. all the commits above the oldCommitid are discarded (DANGER)**
+- `git reset --soft <oldCommitid>`   **This reset the head and main to the oldCommitid. all the commits above the oldCommitid are added in the 2(staging)**
+- `git reset --mixed <oldCommitid>`  **This reset the head and main to the oldCommitid. all the commits above the oldCommitid are added in the 1(working directory)**
+
 ### config
 
 - `git config --global user.name "your github account username"`
